@@ -1,0 +1,282 @@
+<resources>
+
+    <!-- App Name -->
+    <string name="app_name">Quire</string>
+
+    <!-- Facebook login settings -->
+    <string name="facebook_app_id">301447223583530</string>
+    <string name="fb_login_protocol_scheme">fb301447223583530</string>
+
+    <!-- Strings related to all activities -->
+    <string name="all_dialog_loading">Loading&#8230;</string>
+    <string name="all_dialog_server_error">Server Error</string>
+    <string name="all_dialog_try_again">Please try again.</string>
+    <string name="all_dialog_positive">Okay</string>
+    <string name="all_dialog_connection_error_title">Connection Error</string>
+    <string name="all_dialog_connection_error_content">Please check your connection.</string>
+    <string name="all_dialog_timeout_error_title">Timeout Error</string>
+    <string name="all_dialog_timeout_error_content">Please check your internet connection and try again.</string>
+    <string name="all_dialog_network_error_title">Network Error</string>
+
+    <!--Strings related to Nearby Activity-->
+    <string name="nearby_bottom_navigation_home">Home</string>
+    <string name="nearby_bottom_navigation_chat">Chat</string>
+    <string name="nearby_bottom_navigation_profile">Profile</string>
+    <string name="nearby_dialog_listing_created">Your listing has been created!</string>
+
+    <!-- Dummy string placeholders -->
+    <string name="dummy_text_user_name">John Doe</string>
+    <string name="description_dummy_text">
+        Lorem ipsum dolor sit amet, bonorum perpetua vix ad, dicant melius an
+        eam. Justo mazim errem qui at, vis tempor audire explicari at, convenire suavitate interesset sed no. Quo et
+        ponderum perpetua appellantur.
+    </string>
+
+    <!-- Single item options -->
+    <string-array name="product_option">
+        <item>Message Seller</item>
+        <item>View Item</item>
+        <item>Keep Looking</item>
+    </string-array>
+
+    <!-- On click image -->
+    <string-array name="image_option">
+        <item>Replace</item>
+        <item>Delete</item>
+    </string-array>
+
+    <!-- On click image -->
+    <string-array name="image_option_single">
+        <item>Change</item>
+    </string-array>
+
+    <!-- Strings related to Welcome Activity and it's Fragments -->
+    <string name="welcome_text_start">Start</string>
+    <string name="welcome_text_welcome">Welcome to Quire</string>
+    <string name="welcome_text_welcome_subtitle">A fun marketplace to discover cool items sold by people just like
+        you!
+    </string>
+    <string name="welcome_swipe_more">Swipe to learn more</string>
+    <string name="welcome_text_discover">Discover curated items</string>
+    <string name="welcome_text_discover_subtitle">Sold by people near you who you can trust!</string>
+    <string name="welcome_text_community">Community</string>
+    <string name="welcome_text_community_subtitle">Buy and sell products near your community!</string>
+    <string name="welcome_text_upload">Upload your items</string>
+    <string name="welcome_text_upload_subtitle">Simply describe and upload your item!</string>
+    <string name="welcome_dialog_login">Login&#8230;</string>
+    <string name="welcome_button_fb_login">Log In with Facebook</string>
+
+    <!-- Strings related to profile fragment -->
+    <string name="profile_text_logout">Logout</string>
+    <string name="profile_button_new_item">List a new Item</string>
+
+    <!-- Strings related to View Single User Listing activity -->
+    <string name="view_single_dialog_deleting_product">Deleting Listing</string>
+    <string name="view_single_dialog_title_success">Success</string>
+    <string name="view_single_dialog_content_success">Your listing has been deleted successfully.</string>
+    <string name="view_single_dialog_positive_continue">Continue</string>
+
+    <string name="listings_text_toolbar">Listings</string>
+
+    <!-- String for list new item activity -->
+    <string name="new_item_text_photos">Item Photos</string>
+    <string name="new_item_text_name_hint">Name of item&#8230;</string>
+    <string name="new_item_text_description_hint">Description of item&#8230;</string>
+    <string name="new_item_text_price_hint">Price of item&#8230;</string>
+    <string name="new_item_button_confirm">Confirm Listing</string>
+    <string name="new_item_dialog_success">Creating Listing</string>
+    <string name="new_item_dialog_title_missing_image">Missing Images!</string>
+
+    <!-- String for list nearby activity with card layout -->
+    <string name="nearby_text_product_name">Leather Bag</string>
+    <string name="nearby_text_product_description">This leather bag&#8230;</string>
+    <string name="nearby_text_product_price">S/. 50</string>
+
+    <!-- String for chat -->
+    <string name="all_app_version">Sample UI v%1$s / SDK v%2$s</string>
+    <string name="all_create">Create</string>
+    <string name="all_invite">Invite</string>
+    <string name="all_group_channels">Chats</string>
+    <string name="all_open_channels">Open Channels</string>
+
+    <!-- main -->
+    <string name="main_drawer_open">Open navigation drawer</string>
+    <string name="main_drawer_close">Close navigation drawer</string>
+    <string name="select_channel_type">Select channel type</string>
+
+    <!-- Open Channel List -->
+    <string name="open_channel_list_participant_count">%1$d participants</string>
+
+    <string name="create_open_channel">Create Open Channel</string>
+    <string name="participant_list">Participants</string>
+
+    <!-- Group Channel List -->
+    <string name="group_channel_list_file_message_text">%1$s has uploaded a file.</string>
+
+    <string name="create_group_channel">Create Group Channel</string>
+    <string name="member_list">Members</string>
+    <string name="invite_member">Invite members</string>
+
+    <!-- Content descriptions -->
+    <string name="open_channel_chat_content_desc_profile">Profile image</string>
+
+    <!-- Menu actions -->
+    <string name="action_create_channel">Create channel</string>
+
+    <string name="download">Download</string>
+    <string name="cancel">Cancel</string>
+    <string name="upload">Upload</string>
+    <string name="resend_message">Resend</string>
+    <string name="delete_message">Delete</string>
+
+    <!-- Message Status -->
+    <string name="message_sending">Sending</string>
+    <string name="message_failed">Failed</string>
+    <string name="new_item_dialog_content_missing_image">Minimum of 3 images are required.</string>
+
+    <string name="about_text_open_source_libraries">
+        <![CDATA[
+        <h1><b>Credits</b></h1>
+
+<p>
+    This application (Quire) uses Open Source libraries. The source code of the listed libraries are provided
+    below, along with their licenses. The team is grateful for the contributions provided by these developers to
+    the open source community.
+</p>
+
+Copyright (C) 2017 Naren Kukreja (<a href="https://github.com/narenkukreja">https://github.com/narenkukreja</a>) <br>
+Copyright (C) 2017 Jafeth Díaz (<a href="https://github.com/JafethDC">https://github.com/JafethDC</a>) <br>
+
+<h3>App Logo by Eucalyp (flaticon.com)</h3>
+<a href="https://www.flaticon.com/free-icon/online-shopping_426492">Source</a>
+
+<h3>Picasso</h3>
+
+Project: <a href="https://github.com/square/picasso">https://github.com/square/picasso</a><br>
+Copyright 2013 Square, Inc. <br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>Android Image Slider</h3>
+
+Project: <a href="https://github.com/daimajia/AndroidImageSlider">https://github.com/daimajia/AndroidImageSlider</a><br><br>
+<a href="https://opensource.org/licenses/MIT">THE MIT LICENSE</a>
+
+
+<br><br>
+
+<h3>SwipeStack</h3>
+
+Project: <a href="https://github.com/flschweiger/SwipeStack">https://github.com/flschweiger/SwipeStack</a><br>
+Copyright (C) 2016 Frederik Schweiger <br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>AHBottomNavigation</h3>
+
+Project: <a href="https://github.com/aurelhubert/ahbottomnavigation">https://github.com/aurelhubert/ahbottomnavigation</a><br>
+Copyright (c) 2017 Aurelien Hubert (http://github.com/aurelhubert). <br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>Smart Location Library</h3>
+
+Project: <a href="https://github.com/mrmans0n/smart-location-lib">https://github.com/mrmans0n/smart-location-lib</a><br>
+Copyright (c) 2013-2016 Nacho Lopez <br>
+<a href="https://opensource.org/licenses/MIT">THE MIT LICENSE</a>
+
+<br><br>
+
+<h3>AppIntro</h3>
+
+Project: <a href="https://github.com/apl-devs/AppIntro">https://github.com/apl-devs/AppIntro</a><br>
+Copyright 2015 Paolo Rotolo, Copyright 2016 Maximilian Narr <br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>Glide</h3>
+
+Project: <a href="https://github.com/bumptech/glide">https://github.com/bumptech/glide</a> <br>
+Copyright 2014 Google, Inc. All rights reserved. <br>
+<a href="https://github.com/bumptech/glide/blob/master/LICENSE">MIX LICENSE</a>
+
+<br><br>
+
+<h3>Volley</h3>
+
+Project: <a href="https://github.com/google/volley">https://github.com/google/volley</a><br>
+Copyright Google, Inc. All rights reserved. <br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>Material Dialogs</h3>
+
+Project: <a href="https://github.com/afollestad/material-dialogs">https://github.com/afollestad/material-dialogs</a><br>
+Copyright (c) 2014-2016 Aidan Michael Follestad <br>
+<a href="https://opensource.org/licenses/MIT">THE MIT LICENSE</a>
+
+<br><br>
+
+<h3>Floating Search View</h3>
+
+Project: <a href="https://github.com/arimorty/floatingsearchview">https://github.com/arimorty/floatingsearchview</a><br>
+Copyright (C) 2015 Ari C.<br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>Android Circle Button </h3>
+
+Project: <a href="https://github.com/markushi/android-circlebutton">https://github.com/markushi/android-circlebutton</a><br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>Circle Indicator</h3>
+
+Project: <a href="https://github.com/ongakuer/CircleIndicator">https://github.com/ongakuer/CircleIndicator</a><br>
+Copyright (C) 2014 relex<br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>Circle Image View</h3>
+
+Project: <a href="https://github.com/hdodenhof/CircleImageView">https://github.com/hdodenhof/CircleImageView</a><br>
+Copyright 2014 - 2017 Henning Dodenhof<br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>Toasty</h3>
+
+Project: <a href="https://github.com/GrenderG/Toasty">https://github.com/GrenderG/Toasty</a><br>
+<a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU General Public License</a>
+
+<br><br>
+
+<h3>ZGallery</h3>
+
+Project: <a href="https://github.com/mzelzoghbi/ZGallery">https://github.com/mzelzoghbi/ZGallery</a><br>
+Copyright 2016 mzelzoghbi<br>
+<a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a>
+
+<br><br>
+
+<h3>SendBird Android SDK</h3>
+
+Project: <a href="https://github.com/smilefam/SendBird-SDK-Android">https://github.com/smilefam/SendBird-SDK-Android</a><br>
+Copyright SendBird<br>
+<a href="https://github.com/smilefam/SendBird-SDK-Android">SendBird SDK LICENSE</a>
+
+<br><br>
+]]>
+
+    </string>
+
+</resources>

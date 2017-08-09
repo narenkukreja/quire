@@ -1,0 +1,94 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" >
+        <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="8dp"
+                android:transcriptMode="normal" >
+        </ListView>
+
+    </FrameLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#ffffff" >
+
+        <View
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#c5c5c5" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+            <ProgressBar
+                    android:id="@+id/progress_btn_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <ImageButton
+                        android:id="@+id/btn_upload"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sendbird_btn_upload"
+                        android:background="#00000000"/>
+
+                <EditText
+                        android:id="@+id/etxt_message"
+                        android:layout_width="0dp"
+                        android:layout_weight="5"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:gravity="center_vertical"
+                        android:textColorHint="#bbc3c9"
+                        android:hint="What's on your mind?"
+                        android:textColor="#37434f"
+                        android:textSize="16sp"
+                        android:background="#00000000"/>
+
+                <Button
+                        android:id="@+id/btn_send"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_margin="5dp"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"
+                        android:text="Send"
+                        android:background="@drawable/sendbird_btn_send"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

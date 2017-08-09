@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
+    defaultConfig {
+        applicationId "com.naren.quire"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 2
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+    maven { url "https://raw.githubusercontent.com/smilefam/SendBird-SDK-Android/master/" }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    // Google Libs
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:customtabs:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.google.firebase:firebase-messaging:9.8.0'
+    compile 'com.android.support:support-vector-drawable:25.3.1'
+    compile 'com.google.code.gson:gson:2.8.1'
+
+    // 3rd Party Libs
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'link.fls:swipestack:0.3.0'
+    compile 'com.aurelhubert:ahbottomnavigation:2.0.6'
+    compile 'io.nlopez.smartlocation:library:3.2.9'
+    compile 'com.github.paolorotolo:appintro:4.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+    compile 'com.github.arimorty:floatingsearchview:2.0.3'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.github.markushi:circlebutton:1.1'
+    compile 'me.relex:circleindicator:1.2.1@aar'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.sendbird.sdk:sendbird-android-sdk:3.0.32'
+    compile 'org.jsoup:jsoup:1.10.2'
+    compile 'com.github.GrenderG:Toasty:1.2.5'
+    compile 'com.github.mzelzoghbi:zgallery:0.3'
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.naren.quire">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="allowBackup">
+        <activity
+            android:name="com.naren.quire.ui.welcome.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.naren.quire.ui.nearbyproducts.NearbyProductsActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.naren.quire.util.service.QuireService"
+            android:exported="false" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.naren.quire.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.naren.quire.ui.singlelisting.ViewSingleListingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.naren.quire.ui.newitem.ListNewItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.naren.quire.ui.singleuserlisting.ViewSingleUserListingActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.naren.quire.util.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.naren.quire.util.fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.naren.quire.ui.updateuserlisting.UpdateUserListingActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.naren.quire.util.sendbird.PhotoViewerActivity" />
+        <activity
+            android:name="com.naren.quire.util.sendbird.MediaPlayerActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name="com.naren.quire.ui.chat.GroupChannelActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.naren.quire.ui.about.AboutActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

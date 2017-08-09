@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/root"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:clipChildren="false"
+              android:layout_height="match_parent"
+              tools:context="com.android.quire_android.com.naren.quire_android.ui.nearbyproducts.fragments.NearbyProductsFragment">
+
+    <LinearLayout
+            android:id="@+id/searchViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/teal_600"
+            android:orientation="vertical">
+        <com.arlib.floatingsearchview.FloatingSearchView
+                android:visibility="gone"
+                android:id="@+id/floating_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                app:floatingSearch_backgroundColor="@color/teal_500"
+                app:floatingSearch_close_search_on_keyboard_dismiss="true"
+                app:floatingSearch_hintTextColor="@color/grey_300"
+                app:floatingSearch_leftActionColor="@color/grey_300"
+                app:floatingSearch_leftActionMode="showSearch"
+                app:floatingSearch_searchBarMarginLeft="16dp"
+                app:floatingSearch_searchBarMarginRight="16dp"
+                app:floatingSearch_searchBarMarginTop="16dp"
+                app:floatingSearch_searchHint="Search..."
+                app:floatingSearch_showSearchKey="true"
+                app:floatingSearch_suggestionsListAnimDuration="250"
+                app:floatingSearch_viewTextColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/no_products_layout"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <ImageView
+                android:id="@+id/refresh_imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_refresh_pink_a200_24dp"
+                android:onClick="onClick"/>
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/no_products_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Oops! \nNo products are in your area! \n Refresh to search again!"/>
+
+    </LinearLayout>
+
+    <link.fls.swipestack.SwipeStack
+            android:id="@+id/swipeStack"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="32dp"
+            app:stack_spacing="12dp"
+            app:stack_rotation="0"
+            app:swipe_rotation="10"
+            app:scale_factor="0.95"
+            android:visibility="visible"/>
+
+    <at.markushi.ui.CircleButton
+            android:id="@+id/image_one"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_file_upload_grey_400_24dp"
+            android:layout_marginTop="5dp"
+            android:elevation="4dp"
+            android:layout_gravity="center_horizontal"
+            app:cb_color="@color/grey_300"
+            app:cb_pressedRingWidth="8dp" />
+
+    <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="35dp"
+            android:visibility="gone"
+            android:layout_height="35dp"
+            android:elevation="4dp"
+            android:src="@drawable/upload_icon"/>
+</LinearLayout>

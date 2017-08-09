@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "90396399159",
+    "firebase_url": "https://quire-6d11c.firebaseio.com",
+    "project_id": "quire-6d11c",
+    "storage_bucket": "quire-6d11c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90396399159:android:6bb1df963ede2ec2",
+        "android_client_info": {
+          "package_name": "com.naren.quire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90396399159-63h7klbv2rbb4p6gh3u361bgpnf440oi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDClWmnpF_xX9wImOEqbYdhz0x3u4zwysU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
