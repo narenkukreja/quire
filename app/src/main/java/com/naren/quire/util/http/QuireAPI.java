@@ -3,7 +3,7 @@ package com.naren.quire.util.http;
 public class QuireAPI {
 
     // BASE URL
-    public static final String BASE_URL = "http://quire-production.4wjtsmvyyz.us-west-2.elasticbeanstalk.com";
+    public static final String BASE_URL = "https://quire-api.herokuapp.com";
 
     // NEARBY SESSIONS URL ENDPOINT
     public static final String NEARBY_ENDPOINT = "/nearby";
